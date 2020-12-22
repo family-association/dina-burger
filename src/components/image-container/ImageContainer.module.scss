@@ -9,15 +9,15 @@
     filter: saturate(0.8) brightness(1);
     transform: scale(1.2);
   }
-  &:hover {
-    color: #ffcc00;
-  }
 }
 .title {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
   transition: all 0.4s;
+  &:hover {
+    color: #ffcc00;
+  }
 }
 
 .image {
