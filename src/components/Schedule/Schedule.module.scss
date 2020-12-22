@@ -1,0 +1,10 @@
+.schedule {
+  display: flex;
+  font-size: 1.6rem;
+  color: white;
+  justify-content: space-between;
+  min-width: 25rem;
+  &__day {
+    // margin-right: 7rem;
+  }
+}
