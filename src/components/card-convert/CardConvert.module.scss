@@ -1,0 +1,11 @@
+.card {
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(black, 0.2);
+  text-align: center;
+  width: 23rem;
+  border-radius: 1rem;
+  &:nth-child(2) {
+    margin-top: 8rem;
+    align-self: center;
+  }
+}

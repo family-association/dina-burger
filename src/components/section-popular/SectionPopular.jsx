@@ -9,8 +9,8 @@ import {
 const SectionPopular = (props) => (
   <div className={sectionPopular__wrapper}>
     <section className={sectionPopular}>
-      <HeadingSecondary heading="Lanches Populares" />
-      <Paragraph paragraph="os nossos lanches mais populares" />
+      <HeadingSecondary message="Lanches Populares" />
+      <Paragraph message="os nossos lanches mais populares" />
       <Carroussel />
     </section>
   </div>

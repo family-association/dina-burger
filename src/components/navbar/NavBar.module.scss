@@ -1,5 +1,6 @@
 .navbar {
   &__wrapper {
+    z-index: 99;
     padding: 1.5rem 0;
     position: fixed;
     top: 0;

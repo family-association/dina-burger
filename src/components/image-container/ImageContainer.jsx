@@ -5,8 +5,8 @@ const ImageContainer = (props) => (
   <div className={container}>
     <img className={image} src={props.image} alt={props.alt} />
     <div className={title}>
-      <ParagraphBold paragraph={props.title} />
-      <Paragraph paragraph={props.price} />
+      <ParagraphBold message={props.title} />
+      <Paragraph message={props.price} />
     </div>
   </div>
 );
