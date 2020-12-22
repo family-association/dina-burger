@@ -1,5 +1,7 @@
 .header {
-  max-width: 90rem;
+  max-width: 92rem;
+  margin: 0 auto;
+  padding: 0 2rem;
   &__wrapper {
     background-image: url(./../../assets/images/header.jpg);
     height: 65vh;
