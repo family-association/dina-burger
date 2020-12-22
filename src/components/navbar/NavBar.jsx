@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import {
   navbar__wrapper,
   navbar,
@@ -6,6 +7,7 @@ import {
   navlink__left,
   navbar__right,
   active,
+  navbar__icon,
 } from "./NavBar.module.scss";
 import cx from "classnames";
 import LogoTitle from "../logo-title/LogoTitle";
@@ -20,6 +22,10 @@ const NavBar = (props) => {
   //     setNavigation(true);
   //   } else setNavigation(false);
   // }, []);
+  const [responsive, setResponsive] = useState(false);
+  const handleToggleNav = () => {
+    setResponsive(!responsive);
+  };
   const handleClick = () => {
     console.log(window.location.pathname);
     setNavigation(true);
@@ -51,6 +57,9 @@ const NavBar = (props) => {
           <Link onClick={handleClick} className={navlink} to="/order">
             fazer Pedido
           </Link>
+        </div>
+        <div className="toggleNav" onClick={handleToggleNav}>
+          {responsive ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
       </nav>
     </div>

@@ -1,4 +1,5 @@
 .navbar {
+  color: white;
   &__wrapper {
     z-index: 99;
     padding: 1.5rem 0;
@@ -10,6 +11,10 @@
     // transition: background-color 0.1s;
     &.active {
       background-color: black;
+    }
+    &__icon {
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
   &__right {
