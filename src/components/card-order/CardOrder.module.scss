@@ -1,0 +1,14 @@
+.cardOrder {
+  box-shadow: 0 0 1rem rgba(black, 0.2);
+  width: 40rem;
+  border-radius: 1rem;
+  background-color: white;
+  &__header {
+    padding: 1rem;
+    color: white;
+    background-color: #454545;
+  }
+  &__body {
+    padding: 1rem;
+  }
+}

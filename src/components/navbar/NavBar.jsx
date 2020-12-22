@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   navbar__wrapper,
   navbar,
@@ -9,11 +9,27 @@ import {
 } from "./NavBar.module.scss";
 import cx from "classnames";
 import LogoTitle from "../logo-title/LogoTitle";
+import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   const [navigation, setNavigation] = useState(false);
+  // useEffect(() => {
+  //   console.log(window.location.pathname);
+  //   if (window.location.pathname !== "/") {
+  //     console.log("it is");
+  //     setNavigation(true);
+  //   } else setNavigation(false);
+  // }, []);
+  const handleClick = () => {
+    console.log(window.location.pathname);
+    setNavigation(true);
+  };
+  const handleClick1 = () => {
+    console.log(window.location.pathname);
+    setNavigation(false);
+  };
   const changeBackground = () => {
-    console.log(window.scrollY);
+    // console.log(window.location);
     if (window.scrollY >= 60) setNavigation(true);
     else setNavigation(false);
   };
@@ -26,15 +42,15 @@ const NavBar = (props) => {
         </div>
         {/* <a className={cx(navlink__left, navlink)}>Link1</a> */}
         <div className={navbar__right}>
-          <a className={navlink} href="#">
+          <Link onClick={handleClick1} className={navlink} to="/">
             Inicio
-          </a>
-          <a className={navlink} href="#">
+          </Link>
+          <Link onClick={handleClick} className={navlink} to="/about">
             Sobre nós
-          </a>
-          <a className={navlink} href="#">
+          </Link>
+          <Link onClick={handleClick} className={navlink} to="/order">
             fazer Pedido
-          </a>
+          </Link>
         </div>
       </nav>
     </div>
