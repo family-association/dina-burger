@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  color: white;
+  &:hover .image {
+    filter: saturate(0.8) brightness(1);
+    transform: scale(1.2);
+  }
+}
+.title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  transition: all 0.4s;
+  &:hover {
+    color: #ffcc00;
+  }
+}
+
+.image {
+  height: 100%;
+  filter: saturate(0.5) brightness(0.8);
+  transition: all 0.4s;
+}

@@ -1,0 +1,12 @@
+.sectionPopular {
+  margin: 2rem auto;
+
+  max-width: 90rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__wrapper {
+  }
+}

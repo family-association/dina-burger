@@ -1,0 +1,23 @@
+.header {
+  max-width: 90rem;
+  &__wrapper {
+    background-image: url(./../../assets/images/header.jpg);
+    height: 65vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+}
+
+.heading_xxl {
+  font-size: 5.5rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}

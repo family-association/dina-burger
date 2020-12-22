@@ -1,14 +1,21 @@
-.app {
-  position: relative;
-}
-
 .navbar {
   &__wrapper {
-    padding-top: 1rem;
+    z-index: 99;
+    padding: 1.5rem 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: transparent;
+    // transition: background-color 0.1s;
+    &.active {
+      background-color: black;
+    }
+  }
+  &__right {
+    & .navlink:not(last-child) {
+      margin-right: 1rem;
+    }
   }
   max-width: 90rem;
   margin: 0 auto;
@@ -28,7 +35,6 @@
     margin-right: auto;
   }
   &:not(:last-child) {
-    // margin-right: 1rem;
   }
   &:hover {
     color: #ffcc00;
