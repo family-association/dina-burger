@@ -10,10 +10,23 @@
   }
 }
 .foot {
+  display: flex;
+  flex-direction: column;
   &:not(:last-child) {
     margin-right: auto;
   }
   &__title {
     margin-bottom: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.2rem 0.6rem;
+    border-left: 1px solid transparent;
+    transition: all 0.4s;
+    &:hover {
+      color: #ffcc00;
+      border-color: #ffcc00;
+    }
   }
 }

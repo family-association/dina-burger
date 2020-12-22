@@ -1,0 +1,9 @@
+.title {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  &__reverse {
+    color: #ffcc00;
+  }
+}

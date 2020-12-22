@@ -6,7 +6,7 @@
   border-radius: 1rem;
   color: white;
   &:hover .image {
-    filter: saturate(0.8) brightness(1);
+    filter: saturate(1) brightness(1);
     transform: scale(1.2);
   }
 }

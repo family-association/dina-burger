@@ -8,6 +8,7 @@ import {
   active,
 } from "./NavBar.module.scss";
 import cx from "classnames";
+import LogoTitle from "../logo-title/LogoTitle";
 
 const NavBar = (props) => {
   const [navigation, setNavigation] = useState(false);
@@ -20,7 +21,10 @@ const NavBar = (props) => {
   return (
     <div className={cx(navbar__wrapper, navigation ? active : null)}>
       <nav className={navbar}>
-        <a className={cx(navlink__left, navlink)}>Link1</a>
+        <div className={navlink__left}>
+          <LogoTitle />
+        </div>
+        {/* <a className={cx(navlink__left, navlink)}>Link1</a> */}
         <div className={navbar__right}>
           <a className={navlink} href="#">
             Inicio
@@ -29,7 +33,7 @@ const NavBar = (props) => {
             Sobre nós
           </a>
           <a className={navlink} href="#">
-            fazer PedidoS
+            fazer Pedido
           </a>
         </div>
       </nav>
