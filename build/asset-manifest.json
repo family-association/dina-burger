@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90060184.chunk.css",
+    "main.js": "/static/js/main.0e0d997f.chunk.js",
+    "main.js.map": "/static/js/main.0e0d997f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5668629f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5668629f.js.map",
+    "static/js/2.48ee610e.chunk.js": "/static/js/2.48ee610e.chunk.js",
+    "static/js/2.48ee610e.chunk.js.map": "/static/js/2.48ee610e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.90060184.chunk.css.map": "/static/css/main.90060184.chunk.css.map",
+    "static/js/2.48ee610e.chunk.js.LICENSE.txt": "/static/js/2.48ee610e.chunk.js.LICENSE.txt",
+    "static/media/carroussel1.780e55a6.jpg": "/static/media/carroussel1.780e55a6.jpg",
+    "static/media/carroussel2.64b1936d.jpg": "/static/media/carroussel2.64b1936d.jpg",
+    "static/media/carroussel3.ae1771be.jpg": "/static/media/carroussel3.ae1771be.jpg",
+    "static/media/carroussel4.e2c59a8d.jpg": "/static/media/carroussel4.e2c59a8d.jpg",
+    "static/media/Header.module.scss": "/static/media/header.23ebaccc.jpg",
+    "static/media/how_1.ce2d2364.svg": "/static/media/how_1.ce2d2364.svg",
+    "static/media/how_2.8804e3f2.svg": "/static/media/how_2.8804e3f2.svg",
+    "static/media/how_3.ea774d86.svg": "/static/media/how_3.ea774d86.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5668629f.js",
+    "static/js/2.48ee610e.chunk.js",
+    "static/css/main.90060184.chunk.css",
+    "static/js/main.0e0d997f.chunk.js"
+  ]
+}
