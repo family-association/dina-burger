@@ -23,10 +23,12 @@ const NavBar = (props) => {
   const handleClick = () => {
     console.log(window.location.pathname);
     setNavigation(true);
+    if (responsive) setResponsive(!responsive);
   };
   const handleClick1 = () => {
     console.log(window.location.pathname);
     setNavigation(false);
+    if (responsive) setResponsive(!responsive);
   };
   const changeBackground = () => {
     // console.log(window.location);
