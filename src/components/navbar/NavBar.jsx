@@ -6,8 +6,9 @@ import {
   navlink,
   navlink__left,
   navbar__right,
+  navbar__right__active,
   active,
-  navbar__icon,
+  toggleNav,
 } from "./NavBar.module.scss";
 import cx from "classnames";
 import LogoTitle from "../logo-title/LogoTitle";
@@ -15,13 +16,6 @@ import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   const [navigation, setNavigation] = useState(false);
-  // useEffect(() => {
-  //   console.log(window.location.pathname);
-  //   if (window.location.pathname !== "/") {
-  //     console.log("it is");
-  //     setNavigation(true);
-  //   } else setNavigation(false);
-  // }, []);
   const [responsive, setResponsive] = useState(false);
   const handleToggleNav = () => {
     setResponsive(!responsive);
@@ -47,7 +41,12 @@ const NavBar = (props) => {
           <LogoTitle />
         </div>
         {/* <a className={cx(navlink__left, navlink)}>Link1</a> */}
-        <div className={navbar__right}>
+        <div
+          className={cx(
+            navbar__right,
+            responsive ? navbar__right__active : null
+          )}
+        >
           <Link onClick={handleClick1} className={navlink} to="/">
             Inicio
           </Link>
@@ -58,7 +57,7 @@ const NavBar = (props) => {
             fazer Pedido
           </Link>
         </div>
-        <div className="toggleNav" onClick={handleToggleNav}>
+        <div className={toggleNav} onClick={handleToggleNav}>
           {responsive ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
       </nav>

@@ -1,6 +1,8 @@
 .navbar {
   color: white;
   &__wrapper {
+    position: relative;
+
     z-index: 99;
     padding: 1.5rem 0;
     position: fixed;
@@ -12,14 +14,29 @@
     &.active {
       background-color: black;
     }
-    &__icon {
-      height: 2.5rem;
-      width: 2.5rem;
-    }
   }
   &__right {
     & .navlink:not(last-child) {
       margin-right: 1rem;
+    }
+    @media only screen and (max-width: 750px) {
+      padding-top: 8rem;
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      align-items: center;
+      visibility: hidden;
+      transform: translateX(-100%);
+      transition: all 0.3s;
+      &__active {
+        visibility: visible;
+        transform: translateX(0);
+      }
     }
   }
   max-width: 92rem;
@@ -40,10 +57,21 @@
   &__left {
     margin-right: auto;
   }
-  &:not(:last-child) {
-  }
+
   &:hover {
     color: #ffcc00;
     border-color: #ffcc00;
+  }
+  @media only screen and (max-width: 750px) {
+    margin-bottom: 2rem;
+  }
+}
+.toggleNav {
+  display: none;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+  @media only screen and (max-width: 750px) {
+    display: block;
   }
 }
