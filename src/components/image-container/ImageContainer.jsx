@@ -1,4 +1,3 @@
-import { HeadingTertiary } from "../headings/Headings";
 import { ParagraphBold, ParagraphSmall } from "../paragraph/Paragraph";
 import { container, image, title } from "./ImageContainer.module.scss";
 const ImageContainer = (props) => (

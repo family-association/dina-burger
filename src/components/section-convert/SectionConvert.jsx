@@ -14,7 +14,7 @@ import image1 from "./../../assets/images/how_1.svg";
 import image2 from "./../../assets/images/how_2.svg";
 import image3 from "./../../assets/images/how_3.svg";
 const SectionConvert = () => {
-  const [cards, setCards] = useState([
+  const [cards, ,] = useState([
     {
       image: image1,
       title: "comprar é facil",
