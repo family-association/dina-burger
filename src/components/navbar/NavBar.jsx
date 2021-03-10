@@ -26,13 +26,13 @@ const NavBar = (props) => {
         </div>
         {/* <a className={cx(navlink__left, navlink)}>Link1</a> */}
         <div className={navbar__right}>
-          <a className={navlink} href="#">
+          <a className={navlink} href="/">
             Inicio
           </a>
-          <a className={navlink} href="#">
+          <a className={navlink} href="/">
             Sobre nós
           </a>
-          <a className={navlink} href="#">
+          <a className={navlink} href="/">
             fazer Pedido
           </a>
         </div>

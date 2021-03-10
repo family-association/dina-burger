@@ -41,19 +41,19 @@ const Footer = (props) => (
         <div className={foot__title}>
           <HeadingTertiary message="Links rapidos" />
         </div>
-        <a className={foot__link} href="#">
+        <a className={foot__link} href="/">
           Home
         </a>
-        <a className={foot__link} href="#">
+        <a className={foot__link} href="/">
           Sobre Nós
         </a>
-        <a className={foot__link} href="#">
+        <a className={foot__link} href="/">
           Fazer Um pedido
         </a>
-        <a className={foot__link} href="#">
+        <a className={foot__link} href="/">
           Nosso facebook
         </a>
-        <a className={foot__link} href="#">
+        <a className={foot__link} href="/">
           Nosso twitter
         </a>
       </div>
